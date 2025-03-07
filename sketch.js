@@ -25,9 +25,9 @@ function preload() {
   soundRm4.setVolume(0.15);
 
   preloadRm1();
-  preloadRm2();
-  preloadRm3();
-  preloadRm4();
+  //preloadRm2();
+  //preloadRm3();
+  //preloadRm4();
 }
 
 function preloadRm1() {
