@@ -12,13 +12,13 @@ let font;
 let soundRm1, soundRm2, soundRm3, soundRm4;
 
 function preload() {
-  imgTitle = loadImage('assets/0-title.png');
-  font = loadFont("assets/VCR.ttf");
+  imgTitle = loadImage('/dorm-room/assets/0-title.png');
+  font = loadFont("/dorm-room/assets/VCR.ttf");
 
-  soundRm1 = loadSound('assets/sound/milk-fall.mp3');
-  soundRm2 = loadSound('assets/sound/milk-spring.mp3');
-  soundRm3 = loadSound('assets/sound/milk-summer.mp3');
-  soundRm4 = loadSound('assets/sound/milk-winter.mp3');
+  soundRm1 = loadSound('/dorm-room/assets/sound/milk-fall.mp3');
+  soundRm2 = loadSound('/dorm-room/assets/sound/milk-spring.mp3');
+  soundRm3 = loadSound('/dorm-room/assets/sound/milk-summer.mp3');
+  soundRm4 = loadSound('/dorm-room/assets/sound/milk-winter.mp3');
   soundRm1.setVolume(0.15);
   soundRm2.setVolume(0.15);
   soundRm3.setVolume(0.15);
@@ -31,66 +31,66 @@ function preload() {
 }
 
 function preloadRm1() {
-  imgRoom1BG = loadImage('/assets/fall/room1-bg.png');
-  imgr1Box = loadImage('/assets/fall/room1-box.png');
-  imgr1BoxGif = loadImage('/assets/fall/room1-box.gif');
-  imgr1Jersey = loadImage('/assets/fall/room1-jersey.png');
-  imgr1Journal = loadImage('/assets/fall/room1-journal.png');
-  imgr1JournalGif = loadImage('/assets/fall/room1-journal.gif');
-  imgr1Phone = loadImage('/assets/fall/room1-phone.png');
-  imgr1PhoneGif = loadImage('/assets/fall/room1-phone.gif');
-  imgr1Poster = loadImage('/assets/fall/room1-poster.png');
-  imgr1Trash = loadImage('/assets/fall/room1-trashcan.png');
-  imgr1TrashGif = loadImage('/assets/fall/room1-trashcan.gif');
+  imgRoom1BG = loadImage('/dorm-room/assets/fall/room1-bg.png');
+  imgr1Box = loadImage('/dorm-room/assets/fall/room1-box.png');
+  imgr1BoxGif = loadImage('/dorm-room/assets/fall/room1-box.gif');
+  imgr1Jersey = loadImage('/dorm-room/assets/fall/room1-jersey.png');
+  imgr1Journal = loadImage('/dorm-room/assets/fall/room1-journal.png');
+  imgr1JournalGif = loadImage('/dorm-room/assets/fall/room1-journal.gif');
+  imgr1Phone = loadImage('/dorm-room/assets/fall/room1-phone.png');
+  imgr1PhoneGif = loadImage('/dorm-room/assets/fall/room1-phone.gif');
+  imgr1Poster = loadImage('/dorm-room/assets/fall/room1-poster.png');
+  imgr1Trash = loadImage('/dorm-room/assets/fall/room1-trashcan.png');
+  imgr1TrashGif = loadImage('/dorm-room/assets/fall/room1-trashcan.gif');
 }
 
 function preloadRm2() {
-  imgRoom2BG = loadImage('/assets/winter/room2-bg.png');
-  imgr2Bag = loadImage('/assets/winter/bag_ball_card.png');
-  imgr2BagGif = loadImage('/assets/winter/bag_ball_card.gif');
-  imgr2Helmet = loadImage('/assets/winter/box_helmet.png');
-  imgr2HelmetGif = loadImage('/assets/winter/box_helmet.gif');
-  imgr2Coat = loadImage('/assets/winter/coat.png');
-  imgr2CoatGif = loadImage('/assets/winter/coat.gif');
-  imgr2Cups = loadImage('/assets/winter/cups_bottle.png');
-  imgr2CupsGif = loadImage('/assets/winter/cups_bottle.gif');
-  imgr2Laptop = loadImage('/assets/winter/laptop.png');
-  imgr2LaptopGif = loadImage('/assets/winter/laptop.gif');
-  imgr2Poster = loadImage('/assets/winter/poster.png');
-  imgr2PosterGif = loadImage('/assets/winter/poster.gif');
-  imgr2Trash = loadImage('/assets/winter/trashcan.png');
-  imgr2TrashGif = loadImage('/assets/winter/trashcan.gif');
-  imgr1Journal = loadImage('/assets/fall/room1-journal.png');
-  imgr1JournalGif = loadImage('/assets/fall/room1-journal.gif');
+  imgRoom2BG = loadImage('/dorm-room/assets/winter/room2-bg.png');
+  imgr2Bag = loadImage('/dorm-room/assets/winter/bag_ball_card.png');
+  imgr2BagGif = loadImage('/dorm-room/assets/winter/bag_ball_card.gif');
+  imgr2Helmet = loadImage('/dorm-room/assets/winter/box_helmet.png');
+  imgr2HelmetGif = loadImage('/dorm-room/assets/winter/box_helmet.gif');
+  imgr2Coat = loadImage('/dorm-room/assets/winter/coat.png');
+  imgr2CoatGif = loadImage('/dorm-room/assets/winter/coat.gif');
+  imgr2Cups = loadImage('/dorm-room/assets/winter/cups_bottle.png');
+  imgr2CupsGif = loadImage('/dorm-room/assets/winter/cups_bottle.gif');
+  imgr2Laptop = loadImage('/dorm-room/assets/winter/laptop.png');
+  imgr2LaptopGif = loadImage('/dorm-room/assets/winter/laptop.gif');
+  imgr2Poster = loadImage('/dorm-room/assets/winter/poster.png');
+  imgr2PosterGif = loadImage('/dorm-room/assets/winter/poster.gif');
+  imgr2Trash = loadImage('/dorm-room/assets/winter/trashcan.png');
+  imgr2TrashGif = loadImage('/dorm-room/assets/winter/trashcan.gif');
+  imgr1Journal = loadImage('/dorm-room/assets/fall/room1-journal.png');
+  imgr1JournalGif = loadImage('/dorm-room/assets/fall/room1-journal.gif');
 }
 
 function preloadRm3() {
-  imgRoom3BG = loadImage('/assets/spring/room3-bg.png');
-  imgr3Avocado = loadImage('/assets/spring/room3-avocado.png');
-  imgr3Bracelet = loadImage('/assets/spring/room3-bracelet.png');
-  imgr3BraceletGif = loadImage('/assets/spring/room3-bracelet.gif');
-  imgr3Cucumber = loadImage('/assets/spring/room3-cucumber.png');
-  imgr3Phone = loadImage('/assets/spring/room3-phone.png');
-  imgr3PhoneGif = loadImage('/assets/spring/room3-phone.gif');
-  imgr3Trash = loadImage('/assets/spring/room3-trashcan.png');
-  imgr3TrashGif = loadImage('/assets/spring/room3-trashcan.gif');
-  imgr1Journal = loadImage('/assets/fall/room1-journal.png');
-  imgr1JournalGif = loadImage('/assets/fall/room1-journal.gif');
+  imgRoom3BG = loadImage('/dorm-room/assets/spring/room3-bg.png');
+  imgr3Avocado = loadImage('/dorm-room/assets/spring/room3-avocado.png');
+  imgr3Bracelet = loadImage('/dorm-room/assets/spring/room3-bracelet.png');
+  imgr3BraceletGif = loadImage('/dorm-room/assets/spring/room3-bracelet.gif');
+  imgr3Cucumber = loadImage('/dorm-room/assets/spring/room3-cucumber.png');
+  imgr3Phone = loadImage('/dorm-room/assets/spring/room3-phone.png');
+  imgr3PhoneGif = loadImage('/dorm-room/assets/spring/room3-phone.gif');
+  imgr3Trash = loadImage('/dorm-room/assets/spring/room3-trashcan.png');
+  imgr3TrashGif = loadImage('/dorm-room/assets/spring/room3-trashcan.gif');
+  imgr1Journal = loadImage('/dorm-room/assets/fall/room1-journal.png');
+  imgr1JournalGif = loadImage('/dorm-room/assets/fall/room1-journal.gif');
 }
 
 function preloadRm4() {
-  imgRoom4BG = loadImage('/assets/summer/room4-bg.png');
-  imgr4BoxFlap = loadImage('/assets/summer/boxflap.png');
-  imgr4BoxFlapGif = loadImage('/assets/summer/boxflap.gif');
-  imgr4BoxSpin = loadImage('/assets/summer/boxspin.png');
-  imgr4BoxTapeGif = loadImage('/assets/summer/boxtape.gif');
-  imgr4Test = loadImage('/assets/summer/pset.png');
-  imgr4TestGif = loadImage('/assets/summer/pset.gif');
-  imgr4TapePen = loadImage('/assets/summer/tapepen.png');
-  imgr4TapePenGif = loadImage('/assets/summer/tapepen.gif');
-  imgr4Trash = loadImage('/assets/summer/trash.png');
-  imgr1Journal = loadImage('/assets/fall/room1-journal.png');
-  imgr1JournalGif = loadImage('/assets/fall/room1-journal.gif');
+  imgRoom4BG = loadImage('/dorm-room/assets/summer/room4-bg.png');
+  imgr4BoxFlap = loadImage('/dorm-room/assets/summer/boxflap.png');
+  imgr4BoxFlapGif = loadImage('/dorm-room/assets/summer/boxflap.gif');
+  imgr4BoxSpin = loadImage('/dorm-room/assets/summer/boxspin.png');
+  imgr4BoxTapeGif = loadImage('/dorm-room/assets/summer/boxtape.gif');
+  imgr4Test = loadImage('/dorm-room/assets/summer/pset.png');
+  imgr4TestGif = loadImage('/dorm-room/assets/summer/pset.gif');
+  imgr4TapePen = loadImage('/dorm-room/assets/summer/tapepen.png');
+  imgr4TapePenGif = loadImage('/dorm-room/assets/summer/tapepen.gif');
+  imgr4Trash = loadImage('/dorm-room/assets/summer/trash.png');
+  imgr1Journal = loadImage('/dorm-room/assets/fall/room1-journal.png');
+  imgr1JournalGif = loadImage('/dorm-room/assets/fall/room1-journal.gif');
 }
 
 function setup() {
